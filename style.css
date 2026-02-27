@@ -123,20 +123,31 @@ main{
 }
 
 .card-alunos{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     height: 100%;
     width: 100%;
+    gap: 30px;
+
 }
 
 .card {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     gap: 10px;
     height: 300px;
     width: 200px;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
+    background-color: var(--cor-principal);
     font-size: 20px;
-    
+}
+.img {
+    display: flex;
+    height: 10%;
+    width: 10%;
+    align-items: center;
 }
 
 /* STYLE - Footer */
